@@ -1,5 +1,8 @@
 My Business Basic  (MyBB)
 
+The MIT License (MIT)
+Copyright (c) 2003-2015 Mike Curry
+
 Contributors: 	Mike Curry
 		Chris Lakerdas
 		Lee Smith
