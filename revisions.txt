@@ -1,0 +1,105 @@
+======================================================================
+                  MyBB Version 1.26 - Release Notes
+		    Released: December 18th, 2003
+
+     MyBB(tM) Copyright(c) 2003 by MJC Software. All Rights Reserved
+         mikecurry@mjcsoftware.com http://www.mjcsoftware.com/
+
+======================================================================
+
+*   = Denotes a new feature
+#   = Denotes a major bug fix
+(L) = Feature/Bug is specific to Linux Only
+(W) = Feature/Bug is specific to Windows Only
+
+Version	Date		Description of Change
+----------------------------------------------------------------------
+1.26	2003/12/17	Added headers to all programs before making 
+			the project open source.
+
+1.25	2003/12/17	Prevented various directives from executing in
+			command mode.  This fixes the problem where
+			typing EXIT from command mode would crash
+			the program.
+
+1.24*	2003/12/17	Added a new REV function that reverses a 
+			string.
+	
+			eg: -> ? REV("ABC")
+   		            CBA
+
+1.23*	2003/12/17	Added a new RTI function to convert a Roman
+			Numeral string to an integer.
+			
+			eg: -> ? RTI("MCMXLIII")
+			    1943
+
+1.22*	2003/12/16	Added System variable ERS for compatability.
+
+1.21(L)	2003/12/16	Fixed some potential memory allocation 
+			problems, also removed some unnecessary
+			code.
+
+1.20(L)	2003/12/15	Fixed the DIR function in Linux, it was 
+			causing a segment fault.
+
+1.19	2003/12/15	Fixed a problem where a line number greater 
+			than 65534 would wrap around and create a
+			lesser line number.  Reported by John 
+			Spikowski.
+
+1.18 	2003/12/13	Implemented STP(,3) and CVT(,2).  Strips all
+			white characters.
+
+1.17 	2003/12/13	Changed DIR function to return proper 
+			delimiters.  (Now Using the DLM)
+
+1.16*	2003/12/13	Added EOM for Compatability.
+
+1.15#	2003/12/13	The Let directive was not working correctly at
+			the console, you actually had to leave the LET
+			directive out for it to actually work.  This 
+			is now resolved.
+
+1.14* 	2003/12/12	Added TME for Compatability.
+
+1.13*	2003/12/12	Added TMS for Compatability.
+
+1.12 	2003/12/12 	Added some missing Error #20 messages.
+
+1.11#	2003/12/12	Fixed a compile warning where the stack module
+			would have failed due to a missing <string.h>
+			include.
+
+1.10 	2003/12/11	Cleaned up code, updated version number for
+			Development release 1.10.
+
+1.09* 	2003/12/11	Added LCS -> Convert string to lowercase for
+			compatability.
+
+1.08*	2003/12/11	Added UCS -> Convert string to uppercase for
+			compatability.
+
+1.07#	2003/12/11	Fixed CVT -> 8 & 128, wasn't working.
+
+1.06*	2003/12/11	Added STP("",x) where:
+  			    if x=0 -> Trims Leading spaces
+  			    if x=1 -> Trims Trailing spaces
+			    if x=2 -> Trims Leading & Trailing spaces
+
+1.05*	2003/12/11	Added DLM for Compatability.
+
+1.04	2003/12/11	Renamed McBBx to MyBB (My Business Basic) to
+			avoid any conflicts with other Business
+			Basic software.
+
+1.03* 	2003/12/11	Added SSN for compatability.
+
+1.02 	2003/12/11	Moved all Copyright information into
+				the executable and cleared up the 
+				"start_up" file.
+
+1.01#	2003/12/11	Corrected DAY function, was returning
+				a negative year.
+
+1.00	2003/12/10	Public release of MyBB.
